@@ -3,5 +3,55 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+      /* -- Este fragmento de código es parte de un archivo de
+       configuración de TypeScript (tsconfig.json) que
+        especifica opciones del compilador para la 
+        resolución de módulos. Establece la URL 
+        base para la resolución de módulos y 
+        define mapeos de rutas para las 
+        importaciones de módulos. 
+        */
+
+      /* --Esta configuración permite importar módulos
+       utilizando el prefijo @ como un alias para 
+       el directorio src. Por ejemplo, import 
+       MyModule from '@/MyModule'; 
+       se resolvería como 
+       src/MyModule. 
+       */
+
+      /* ** Análisis del Código
+      
+        --Entradas
+
+        baseUrl: Una cadena que especifica el directorio base
+         para resolver nombres de módulos no relativos.
+
+        paths: Un objeto que mapea patrones de importación 
+        de módulos a rutas específicas.
+
+
+        --Flujo
+
+        El baseUrl se establece en el directorio actual, que sirve como raíz para la resolución de módulos.
+
+        La opción paths define un mapeo donde cualquier importación que comience con @/ se resolverá en el directorio src/.
+
+        --Salidas
+
+        El compilador de TypeScript resolverá las importaciones de módulos utilizando la URL base especificada y los mapeos de rutas, permitiendo declaraciones de importación más limpias y manejables. */
+    },
+
+    "types": ["node"]
+    /* -- Este fragmento de código es una configuración JSON que
+     especifica los tipos de entornos o plataformas en los 
+     que se espera que el código se ejecute, en este caso, 
+     "node" para Node.js. 
+     */
+  }
 }

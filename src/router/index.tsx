@@ -41,9 +41,9 @@ import { createBrowserRouter } from "react-router-dom";
   # Rutas protegidas
 */
 
-import { MainLayout } from "../layouts";
-import { homeRoutes } from "../modules/Home/routes";
-import { galleryRoutes } from "../modules/Gallery/routes";
+import { MainLayout } from "@/layouts";
+import { homeRoutes } from "@/modules/Home/routes";
+import { galleryRoutes } from "@/modules/Gallery/routes";
 
 /* ** 
   -- Se importan las rutas asignadas en cada uno de los modulos, 

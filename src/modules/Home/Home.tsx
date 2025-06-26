@@ -1,4 +1,8 @@
-import { Header, Footer } from "../../components";
+import { Header, Footer } from "@/components"; /* <---- antes era import { Header, Footer } from "../../components"; */
+
+/* **
+  Instalamos Path para poder usar los path personalizados 
+*/
 
 export const Home = () => {
   return (
@@ -6,7 +10,7 @@ export const Home = () => {
       <Header></Header>
       <div>
         <h1>Home</h1>
-        <p>Welcome to the Home page!</p>
+        <p>Welcome to the Home pagesss!</p>
       </div>
       <Footer></Footer>
     </>

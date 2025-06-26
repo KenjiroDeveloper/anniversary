@@ -44,7 +44,7 @@ Renderizar el layout o page correspondiente según la ruta actual.
 Controlar navegación, errores, loaders, etc.
 */
 
-import routes from "./router";
+import routes from "@/router";
 /* ** Importacion de archivos de routes
 
   -- Importa el archivo que contiene las rutas de tu aplicación. Este archivo debe estar en la carpeta src/router.
