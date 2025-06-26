@@ -1,3 +1,71 @@
-
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  prefix: "d-";
+}
+
+@plugin "daisyui/theme" {
+  name: "anniversary";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+
+  /* Colors */
+  --color-base-100: #571b3c;
+  --color-base-200: #341931;
+  --color-base-300: #111625;
+  --color-base-contentD: #dfdfdf;
+
+  --color-primary: #9d2053;
+  --color-primary-content: #dfdfdf;
+
+  --color-secondary: #361763;
+  --color-secondary-content: #dfdfdf;
+
+  --color-accent: #a1c1be;
+  --color-accent-content: #1f2947;
+
+  --color-neutral: #1f2947;
+  --color-neutral-content: #dfdfdf;
+
+  --color-info: #0e8d94;
+  --color-info-content: #dfdfdf;
+
+  --color-success: #46c46c;
+  --color-success-content: #dfdfdf;
+
+  --color-warning: #ff8800;
+  --color-warning-content: #1f2947;
+
+  --color-error: #c0012a;
+  --color-error-content: #dfdfdf;
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 2rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0.5;
+}
+
+@theme {
+  --color-primary: #9d2053;
+  --color-secondary: #361763;
+  --color-dark: #2f1452;
+  --color-light: #dfdfdf;
+  --color-dark-backdrop: #200e38;
+  --color-light-backdrop: #e9e9e9;
+  --color-info: #0e8d94;
+  --color-danger: #c0012a;
+  --color-success: #46c46c;
+  --color-warning: #ff8800;
+}

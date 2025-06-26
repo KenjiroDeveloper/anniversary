@@ -26,5 +26,9 @@ interface MainLayoutProps {
 }
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
-  return <div>{children || <Outlet />}</div>;
+  return (
+    <div className="min-h-svh flex flex-col bg-base-300">
+      {children || <Outlet />}
+    </div>
+  );
 };
