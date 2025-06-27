@@ -1,8 +1,8 @@
 export const Header = () => {
   return (
     <div className="relative">
-      <div className="fixed top-0 right-0 left-0 p-4">
-        <div className="d-navbar bg-base-300">
+      <div className="fixed top-0 right-0 left-0 p-4 bg-base-300" >
+        <div className="d-navbar">
           <div className="flex-none">
             <button className="btn btn-square btn-ghost">
               <svg

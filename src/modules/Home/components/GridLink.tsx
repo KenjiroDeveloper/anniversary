@@ -23,7 +23,9 @@ export const GridLink = ({
 
   return (
     <div className={classname}>
-      <a href={href}>{children}</a>
+      <div className="flex p-2 bg-dark-backdrop rounded-2xl justify-center">
+        <a href={href}>{children}</a>
+      </div>
     </div>
   );
 };

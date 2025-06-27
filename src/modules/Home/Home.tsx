@@ -14,17 +14,25 @@ export const Home = () => {
   return (
     <>
       <Header></Header>
-      <div className="flex flex-col grow p-4 mt-16">
-        <div className="flex">
-          <Grid columns={3} rows={3} gap={1}>
-            <div>1</div>
-            <GridLink href="home" colStart={3} rowStart={2}>
-              2
-            </GridLink>
-            <GridLink href="home" rowSpan={2} colStart={2}>2</GridLink>
-          </Grid>
+      <main className="flex flex-col grow p-4 mt-28 max-w-full">
+        <div className="bg-dark-backdrop p-2 rounded-3xl shadow">
+          <section className="p-2">
+            <div className="mx-4 mb-4">
+              <h2 className="text-5xl font-bold">Relationship statics</h2>
+            </div>
+          </section>
+          <div className="flex bg-dark rounded-2xl p-2 border-primary border-2">
+            <Grid columns={3} rows={2} gap={2}>
+              <GridLink href="home">1</GridLink>
+              <GridLink href="home">2</GridLink>
+              <GridLink href="home">3</GridLink>
+              <GridLink href="home">4</GridLink>
+              <GridLink href="home">5</GridLink>
+              <GridLink href="home">6</GridLink>
+            </Grid>
+          </div>
         </div>
-      </div>
+      </main>
       <Footer></Footer>
     </>
   );

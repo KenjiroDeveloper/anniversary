@@ -9,12 +9,12 @@ interface GridProps {
 
 export const Grid = ({ columns, rows, gap, children }: GridProps) => {
   const classname = [
+    `gap-${gap}`,
     "w-full",
     "p-1",
     "grid",
     `grid-cols-${columns}`,
     `grid-rows-${rows}`,
-    `gap-${gap}`,
   ].join(" ");
 
   return <div className={classname}>{children}</div>;
